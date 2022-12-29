@@ -21,6 +21,7 @@ file = ogr.Open("/home/nvmGUser/users/tepler/GDAL-exe1/dataline.shp",1)
 # for layer in range(gdb.GetLayerCount()):
 #     for i in gdb.GetLayer(layer):
 #         print(i.ExportToJson())
+
 ds = gdal.OpenEx("/home/nvmGUser/users/tepler/GDAL-exe1/data/AFG_adm2.shp")
 print(ds.GetLayerCount())
 print(gdb.GetLayerCount())
@@ -42,7 +43,7 @@ print("ulx, uly",ulx, uly)
 print("lrx, lry",lrx, lry)
 
 ######
-name=("dataline.shp")
+name = ("dataline.shp")
 driver = ogr.GetDriverByName("ESRI Shapefile")
 try:
     ds = driver.CreateDataSource(name)
