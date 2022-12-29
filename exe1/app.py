@@ -14,7 +14,7 @@ try:
 except Exception():
     print (Exception)
     sys.exit()
-file=ogr.Open("/home/nvmGUser/users/tepler/GDAL-exe1/dataline.shp",1)
+file = ogr.Open("/home/nvmGUser/users/tepler/GDAL-exe1/dataline.shp",1)
 # for layer in range(file.GetLayerCount()):
 #     for i in file.GetLayer(layer):
 #         print(i.ExportToJson())
